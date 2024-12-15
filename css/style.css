@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/**
+ * Сброс стилей
+ **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+input {
+  outline: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: Montserrat;
+  color: white;
+  font-size: 22px;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1670px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.service-wrap {
+  min-width: 320px;
+  max-width: 1472px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url("/images/Femida.png");
+  background-size: cover;
+}
+header .header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(22, 21, 21, 0.82);
+  z-index: 1;
+}
+header .header-overlay .header-information-block {
+  margin-top: 138px;
+  width: 835px;
+  text-align: left;
+}
+header .header-overlay .header-information-block h1 {
+  font-family: Playfair Display;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 86px;
+  letter-spacing: 0px;
+  margin-bottom: 60px;
+}
+header .header-overlay .header-information-block p {
+  width: 640px;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 46px;
+  margin-bottom: 60px;
+}
+header .header-overlay .header-information-block .button-link {
+  display: inline-block; /* Позволяет задать размеры и отступы */
+  padding: 12px 54px; /* Внутренние отступы */
+  background-color: #565757; /* Цвет фона */
+  color: white; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 35px; /* Скругление углов */
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+header .header-overlay .header-list {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+header .header-overlay .header-list .navbar {
+  margin: 0 auto;
+  display: flex;
+}
+header .header-overlay .header-list .navbar li {
+  margin-right: 65px;
+}
+header .header-overlay .header-list .navbar li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+header .header-overlay .header-list .navbar li:last-child {
+  margin-right: 0;
+}
+header .header-overlay .header-list .header_logo {
+  width: 80px;
+  height: auto;
+}
+header .header-overlay .header-list .header_logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.service-deal {
+  margin-top: 190px;
+  margin-bottom: 190px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-deal .service-img {
+  width: 827px;
+}
+.service-deal .service-information {
+  width: 538px;
+  text-align: left;
+}
+.service-deal .service-information h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 58px;
+  margin-bottom: 41px;
+}
+.service-deal .service-information p {
+  line-height: 36px;
+  letter-spacing: 0px;
+  margin-bottom: 61px;
+  line-height: 36px;
+}
+.service-deal .service-information .service-button-link {
+  display: inline-block; /* Позволяет задать размеры и отступы */
+  padding: 12px 54px; /* Внутренние отступы */
+  border: 2px solid rgb(86, 87, 87);
+  color: #000; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 35px; /* Скругление углов */
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.form {
+  position: relative;
+  height: 635px;
+  background-image: url("/images/office.png");
+  background-size: cover;
+}
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.82);
+  z-index: 1;
+}
+.form-overlay .service-wrap {
+  min-width: 500px;
+  max-width: 1000px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.form-overlay .service-wrap .service-deal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-overlay .service-wrap .service-deal .service-information {
+  color: white;
+  text-align: left;
+}
+.form-overlay .service-wrap .service-deal .service-information h1 {
+  width: 464px;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 47px;
+  margin-bottom: 60px;
+}
+.form-overlay .service-wrap .service-deal .service-information p {
+  width: 266px;
+  line-height: 30px;
+}
+.form-overlay .service-wrap .service-deal .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+.form-overlay .service-wrap .service-deal .form-container .form-input {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(186, 185, 185);
+  width: 300px;
+  padding: 20px 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 35px;
+}
+.form-overlay .service-wrap .service-deal .form-container .form-button {
+  width: 360px;
+  display: inline-block; /* Позволяет задать размеры и отступы */
+  padding: 20px 30px; /* Внутренние отступы */
+  background-color: #565757; /* Цвет фона */
+  color: white; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  border-radius: 35px; /* Скругление углов */
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid #565757;
+  cursor: pointer; /* Изменяет курсор на указатель */
+}
+.form-overlay .service-wrap .service-deal .form-container p {
+  width: 221px;
+  color: rgb(118, 112, 112);
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+footer {
+  background-color: #1E1D1D;
+  padding: 50px 0;
+}
+footer .footer-list {
+  display: flex;
+  align-items: center;
+}
+footer .footer-list .logos {
+  margin-left: auto;
+  display: flex;
+  gap: 34px;
+}
+footer .footer-list a {
+  text-decoration: none;
+  width: 280px;
+  color: rgb(191, 188, 188);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 110px;
+}
+footer .footer-list .footer-logo {
+  width: 70px;
+  height: auto;
+}
+footer .footer-list .footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

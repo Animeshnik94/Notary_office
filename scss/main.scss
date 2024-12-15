@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@import 'reset';
+@import 'mixins';
+@import 'core';
+
+header{
+    position: relative;
+    height: 100vh;
+    background-image: url('/images/Femida.png');
+    background-size: cover;
+
+    .header-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(22, 21, 21, 0.82);
+        z-index: 1;
+
+        .header-information-block{
+            margin-top: 138px;
+            width: 835px;
+            text-align: left;
+            
+            h1{
+                font-family: Playfair Display;
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 86px;
+                letter-spacing: 0px;
+                margin-bottom: 60px;
+            }
+            p{
+                width: 640px;
+                font-family: Montserrat;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 46px;
+                margin-bottom: 60px;
+            }
+            .button-link {
+                display: inline-block; /* Позволяет задать размеры и отступы */
+                padding: 12px 54px; /* Внутренние отступы */
+                background-color: #565757; /* Цвет фона */
+                color: white; /* Цвет текста */
+                text-align: center; /* Выравнивание текста по центру */
+                text-decoration: none; /* Убираем подчеркивание */
+                border-radius: 35px; /* Скругление углов */
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 46px;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+        }
+
+        .header-list{
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+
+
+            .navbar{
+                margin: 0 auto;
+                display: flex;
+                
+                li{
+                    margin-right: 65px;
+
+                    a{
+                        font-size: 20px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            .header_logo{
+                width: 80px;
+                height: auto;
+                img{
+                    max-width: 100%;
+                    height: auto; 
+                }
+            }
+        }
+    }
+}
+
+.service-deal{
+    margin-top: 190px;
+    margin-bottom: 190px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    .service-img{
+        width: 827px;
+    }
+    .service-information{
+        width: 538px;
+        text-align: left;
+        h1{
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 58px;
+            margin-bottom: 41px;
+        }
+        p{
+            line-height: 36px;
+            letter-spacing: 0px;
+            margin-bottom: 61px;
+            line-height: 36px;
+        }
+        .service-button-link {
+                display: inline-block; /* Позволяет задать размеры и отступы */
+                padding: 12px 54px; /* Внутренние отступы */
+                border: 2px solid rgb(86, 87, 87);
+                color: #000; /* Цвет текста */
+                text-align: center; /* Выравнивание текста по центру */
+                text-decoration: none; /* Убираем подчеркивание */
+                border-radius: 35px; /* Скругление углов */
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 46px;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+    }
+}
+
+.form{
+    position: relative;
+    height: 635px;
+    background-image: url('/images/office.png');
+    background-size: cover;
+
+    &-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.82);
+        z-index: 1;
+
+        .service-wrap{
+            @include min-max(500px, 1000px);
+
+            .service-deal{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .service-information{
+                    color: white;
+                    text-align: left;
+                    h1{
+                        width: 464px;
+                        font-size: 42px;
+                        font-weight: 600;
+                        line-height: 47px;
+                        margin-bottom: 60px;
+                    }
+                    p{
+                        width: 266px;
+                        line-height: 30px;
+                    }
+                }
+                .form-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 26px;
+
+                    .form-input{
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: rgb(186, 185, 185);
+                        width: 300px;
+                        padding: 20px 30px;
+                        background-color: transparent; // прозрачный фон
+                        border: 2px solid white; 
+                        border-radius: 35px; // радиус скругления
+                    }
+                    .form-button{
+                        width: 360px;
+                        display: inline-block; /* Позволяет задать размеры и отступы */
+                        padding: 20px 30px; /* Внутренние отступы */
+                        background-color: #565757; /* Цвет фона */
+                        color: white; /* Цвет текста */
+                        text-align: center; /* Выравнивание текста по центру */
+                        border-radius: 35px; /* Скругление углов */
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                        border: 2px solid #565757;
+                        cursor: pointer; /* Изменяет курсор на указатель */
+                    }
+                    p{
+                        width: 221px;
+                        color: rgb(118, 112, 112);
+                        font-family: Montserrat;
+                        font-size: 11px;
+                        font-weight: 400;
+                        line-height: 15px;
+                        letter-spacing: 0px;
+
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #1E1D1D;
+    padding: 50px 0;
+
+    .footer-list{
+        display: flex;
+        align-items: center;
+
+        .logos{
+            margin-left: auto;
+            display: flex;
+            gap: 34px;
+        }
+        a{
+            text-decoration: none;
+            width: 280px;
+            color: rgb(191, 188, 188);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0px;
+            text-align: left;
+            margin-left: 110px;
+        }
+        .footer-logo{
+            width: 70px;
+            height: auto;
+            img{
+                max-width: 100%;
+                height: auto; 
+            }
+        }
+    }
+}

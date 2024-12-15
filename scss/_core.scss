@@ -1,0 +1,20 @@
+body{
+    font-family: Montserrat;
+    color: white;
+    font-size: 22px;
+}
+
+.container {
+    @include min-max(320px, 1670px);
+}
+
+.service-wrap{
+    @include min-max(320px, 1472px);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
